@@ -4,61 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Inventario</title>
 </head>
 <body>
     <nav class="menu">
         <ul>
-            <li><img src="/assets/inventario-disponible.png" alt="" sizes="16x16"></li>
+            <li><img src="/assets/gestion-de-productos.png" alt="" sizes="16x16"></li>
             <li><a href="#" class="nav">Equipo</a></li>
             <li><a href="#" class="nav">Contacto</a></li>
             <li><a href="/index.html" class="nav">Panel de control</a></li>
             <li><a href="/inventory.html" class="nav">Inventario</a></li>
         </ul>
     </nav>
-    <table>
+    <form class="products-form">
+        <div class="add-container">
+            <input type="text" id="product-name" placeholder="Nombre">
+            <input type="number" id="product-quantity" placeholder="Cantidad">
+            <input type="number" id="product-price" step="0.01" placeholder="Precio">
+            <button id="add-product" type="button" class="btn btn-primary btn-sm">Añadir Producto</button>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchByName" placeholder="Buscar">
+            <button class="fa-solid fa-magnifying-glass" style="color: #5b88d7;"></button>
+        </div>
+    </form>
+    <table id="inventory-table" class="inventory-table">
         <tr>
-            <th>
-                <p>ID</p>
-            </th>
-            <th>
-                <p>PRODUCTO</p>
-            </th>
-            <th>
-                <p>STOCK INICIAL</p>
-            </th>
-            <th>
-                <p>ENTRADAS</p>
-            </th>
-            <th>
-                <p>SALIDAS</p>
-            </th>
-            <th>
-                <p>TOTAL</p>
-            </th>
+            <th>ID</th>
+            <th>PRODUCTO</th>
+            <th>STOCK INICIAL</th>
+            <th>PRECIO</th>
+            <th>ACCIONES</th>
         </tr>
 
         <tr>
-            <td>
-                <p>1</p>
-            </td>
-            <td>
-                <p>Gran Smith Apples</p>
-            </td>
-            <td>
-                <p></p>
-            </td>
-            <td>
-                <p>1</p>
-            </td>
-            <td>
-                <p>1</p>
-            </td>
-            <td>
-                <p>1</p>
-            </td>
+            <td>Gran Smith Apples</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 
     </table>
+    <script src="/scripts/products.js"></script>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>
