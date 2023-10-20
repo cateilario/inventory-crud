@@ -16,22 +16,24 @@ export const listProducts = () => {
         cell2.innerText = item.amount;
         cell3.innerText = item.price;
 
-        const deleteButton = document.createElement("button");
-            deleteButton.innerText = "Borrar";
-        deleteButton.addEventListener("click", () =>{
-            //Logic to delete specific product
-        });
-
-        cell4.appendChild(deleteButton);
-
         const editButton = document.createElement("button");
             editButton.innerText = "Editar";
+            editButton.classList.add("edit-button")
         editButton.addEventListener("click", () =>{
             //Logic to delete specific product
         });
 
         cell4.appendChild(editButton);
 
+        const deleteButton = document.createElement("button");
+            deleteButton.innerText = "Borrar";
+            deleteButton.classList.add("delete-button")
+
+        deleteButton.addEventListener("click", () =>{
+            //Logic to delete specific product
+        });
+
+        cell4.appendChild(deleteButton);
     })
 
 }

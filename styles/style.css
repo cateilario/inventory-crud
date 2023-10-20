@@ -6,17 +6,21 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    background-color: #e3e7e9;
+}
+
 .menu{
     background-color: #2e2d2d;
-    height: 80px;
+    height: 70px;
     text-align: left;
 }
 
 .menu ul{
     list-style: none;
     display: flex;
-    padding: 20px;
-    font-size: 1rem;
+    padding: 25px;
+    font-size: .8rem;
  }
 
 .menu ul li{
@@ -24,7 +28,7 @@
 }
 
 .menu li a {
-    padding: 10px;
+    padding: 15px;
     color: #fffefe;
     background-color: none;
     text-decoration: none;
@@ -35,10 +39,15 @@
     background-color: #484646;
 }
 
+h3{
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
 form{
-    margin: 30px;
-    border: 1px solid #504e4e;
-    border-radius: 2px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
     padding: 30px;
     display:flex;
     justify-content: space-between;
@@ -46,25 +55,74 @@ form{
 }
 
 input{
-    padding: 3px;
-    border-radius: 2px;
-    border: 1px solid #525050;
+    padding: 7px;
+    border-radius: 3px;
+    border: .5px solid #afadad;
+}
+
+input:focus{
+    background-color: #e8f5fa;
 }
 
 form button{
-    margin-left: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.add-product{
+    background-color: #337ddf;
+    color: white;
+    font-weight: 600;
+    border:none;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .fa-solid{
     border: none;
+    background-color: none;
 }
 
 .inventory-table{
-    margin: 30px;
-    border: 1px solid #535050;
-    border-radius: 2px;
-    width: 96%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 97%;
+    text-align: center;
+    font-size: .9rem;
 }
+
+th{
+    border-bottom: 0.5px solid #afadad;
+    padding: 10px;
+}
+
+td{
+    border-bottom: 0.5px solid #afadad;
+    padding: 20px;
+}
+
+table button{
+    margin-right: 10px;
+    padding: 5px;
+    width: 90px;
+    height: auto;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-button{
+    background-color: #424141;
+    color: white;
+}
+
+.delete-button{
+    background-color: #dd2c2c;
+    color: white;
+}
+
 
 
 
