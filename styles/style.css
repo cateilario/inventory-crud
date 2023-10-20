@@ -37,20 +37,35 @@
 
 form{
     margin: 30px;
-    border: 1px solid #424040;
+    border: 1px solid #504e4e;
     border-radius: 2px;
     padding: 30px;
     display:flex;
     justify-content: space-between;
-    margin-top: 40px;
     font-size: .9rem;
 }
 
 input{
-    padding: 4px;
+    padding: 3px;
     border-radius: 2px;
-    border: 1px solid #424040;
+    border: 1px solid #525050;
 }
+
+form button{
+    margin-left: 10px;
+}
+
+.fa-solid{
+    border: none;
+}
+
+.inventory-table{
+    margin: 30px;
+    border: 1px solid #535050;
+    border-radius: 2px;
+    width: 96%;
+}
+
 
 
 

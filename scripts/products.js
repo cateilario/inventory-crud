@@ -1,4 +1,4 @@
-export {inventory};
+export {inventory}
 
 // Function to obtain random quantity
 const getRandomQuantity = () =>{

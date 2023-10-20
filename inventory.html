@@ -18,7 +18,7 @@
             <li><a href="/inventory.html" class="nav">Inventario</a></li>
         </ul>
     </nav>
-    <form class="products-form">
+    <form class="products-form" id="products-form">
         <div class="add-container">
             <input type="text" id="product-name" placeholder="Nombre">
             <input type="number" id="product-quantity" placeholder="Cantidad">
@@ -27,28 +27,20 @@
         </div>
         <div class="search-container">
             <input type="text" id="searchByName" placeholder="Buscar">
-            <button class="fa-solid fa-magnifying-glass" style="color: #5b88d7;"></button>
+            <button class="fa-solid fa-magnifying-glass fa-lg" style="color: #477cd7;"></button>
         </div>
     </form>
+
     <table id="inventory-table" class="inventory-table">
         <tr>
-            <th>ID</th>
             <th>PRODUCTO</th>
             <th>STOCK INICIAL</th>
             <th>PRECIO</th>
             <th>ACCIONES</th>
         </tr>
-
-        <tr>
-            <td>Gran Smith Apples</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
     </table>
-    <script src="/scripts/products.js"></script>
-    <script src="/scripts/script.js"></script>
+
+    <script src="/scripts/main.js" type="module"></script>
+    
 </body>
 </html>
