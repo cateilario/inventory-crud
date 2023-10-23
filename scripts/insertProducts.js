@@ -7,12 +7,12 @@ export const insertProducts = () => {
     productForm.addEventListener("submit", (event) => {
         // Preventing to behave like a form
         event.preventDefault()
-        console.log("AQUI NO LLEGA")
+        
 
         const productName = document.getElementById("product-name").value;
         const productQuantity = parseInt(document.getElementById("product-quantity").value);
         const productPrice = parseFloat(document.getElementById("product-price").value).toFixed(2);
-        console.log("LLEGO AQUI 3")
+       
 
         if (productName && !isNaN(productPrice) && !isNaN(productQuantity)){
             
