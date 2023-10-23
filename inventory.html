@@ -23,12 +23,12 @@
 
     <form class="products-form" id="products-form">
         <div class="add-container">
-            <input class="name" type="text" id="product-name" placeholder="Nombre">
-            <input class="quantity" type="number" id="product-quantity" placeholder="Cantidad">
-            <input class="price" type="number" id="product-price" step="0.01" placeholder="Precio">
-            <button id="add-product" type="button" class="add-product">Añadir producto</button>
+            <input class="name" type="text" id="product-name" placeholder="Nombre" required>
+            <input class="quantity" type="number" id="product-quantity" placeholder="Cantidad" required>
+            <input class="price" type="number" id="product-price" step="0.01" placeholder="Precio" required>
+            <button id="add-product" type="button" class="add-product" type="submit">Añadir producto</button>
         </div>
-        <div class="search-container">
+        <div class="search-container"> 
             <input type="text" id="searchByName" placeholder="Buscar" class="search">
             <button class="fa-solid fa-magnifying-glass fa-lg" style="color: #477cd7;"></button>
         </div>
@@ -41,6 +41,7 @@
             <th>PRECIO</th>
             <th>ACCIONES</th>
         </tr>
+        <tbody id="inventory-content"></tbody>
     </table>
 
     <script src="/scripts/main.js" type="module"></script>

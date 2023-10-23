@@ -70,12 +70,16 @@ form button{
 }
 
 .add-product{
-    background-color: #337ddf;
+    background-color: #458ae4;
     color: white;
     font-weight: 600;
     border:none;
     border-radius: 5px;
     padding: 10px;
+}
+
+.add-product:hover{
+    background-color: #4674af;
 }
 
 .fa-solid{
