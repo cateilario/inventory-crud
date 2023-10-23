@@ -2,16 +2,16 @@ import { inventory } from "./products.js";
 import { listProducts } from "./listProducts.js";
 
 export const insertProducts = () =>{
-    const productForm = document.getElementById("products-form");
+    console.log("LLEGO AQUI 2")
+    const productForm = document.getElementById("inventory-form");
     productForm.addEventListener("submit", (event) => {
-
         // Preventing to behave like a form
         event.preventDefault()
-
+        
         const productName = document.getElementById("product-name").value;
         const productQuantity = parseInt(document.getElementById("product-quantity").value);
         const productPrice = parseFloat(document.getElementById("product-price").value).toFixed(2);
-        
+        console.log("LLEGO AQUI 3")
 
         if (productName && !isNaN(productPrice) && !isNaN(productQuantity)){
             

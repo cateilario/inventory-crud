@@ -3,9 +3,9 @@
  * @GitHub 
  */
 
-import {listProducts} from "./listProducts.js"
+import { listProducts } from "./listProducts.js"
 //import {inventory} from "./products.js";
-import {insertProducts} from "./insertProducts.js"
+import { insertProducts } from "./insertProducts.js"
 
 document.addEventListener("DOMContentLoaded", listProducts);
 
@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", listProducts);
 
 // Add a new product to the inventory
 document.addEventListener("DOMContentLoaded", () =>{
-    const addProduct = document.getElementById("products-form");
-
+    const addProduct = document.getElementById("inventory-form");
     addProduct.addEventListener("click", () =>{
-    insertProducts()
-
+    
+        insertProducts()
+        console.log("LLEGO AQUI")
     /*const productName = document.getElementById("product-name").value;
     const productPrice = parseFloat(document.getElementById("product-price").value).toFixed(2);
     const productQuantity = parseInt(document.getElementById("product-quantity").value);
