@@ -19,7 +19,7 @@ export const insertProducts = () => {
             const newProduct = {
                 id: inventory.length + 1,
                 name: productName,
-                quantity: productQuantity,
+                amount: productQuantity,
                 price: productPrice
             }
 
