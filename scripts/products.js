@@ -1,4 +1,4 @@
-export {inventory}
+export { inventory }
 
 // Function to obtain random quantity
 const getRandomQuantity = () =>{
@@ -7,7 +7,7 @@ const getRandomQuantity = () =>{
 
 // Initial list of products: objet array
 const inventory = [
-    {id: 1, name: "Manzana Gran Smith", amount:getRandomQuantity(), price: 40},
+    {id: 1, name: "Manzana Gran Smith", amount: getRandomQuantity(), price: 40},
     {id: 2, name: "Manzana Golden", amount: getRandomQuantity(), price: 30},
     {id: 3, name: "Piña", amount: getRandomQuantity(), price: 20},
     {id: 4, name: "Naranja", amount: getRandomQuantity(), price: 50},

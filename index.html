@@ -8,6 +8,7 @@
     <title>Inventario</title>
     
 </head>
+
 <body>
     <nav class="menu">
         <ul>
@@ -22,16 +23,22 @@
     <h3>Productos</h3>
 
     <form class="products-form" id="inventory-form">
+            <label for="product-name"></label>
             <input class="name" type="text" id="product-name" placeholder="Nombre" required>
+            <label for="product-quantity"></label>
             <input class="quantity" type="number" id="product-quantity" placeholder="Cantidad" required>
+            <label for="product-price"></label>
             <input class="price" type="number" id="product-price" step="0.01" placeholder="Precio" required>
-            <button id="add-product" type="button" class="add-product" type="submit">Añadir producto</button>
+            <button id="add-product" class="add-product" type="submit">Añadir producto</button>
         
-        <div class="search-container"> 
-            <input type="text" id="searchByName" placeholder="Buscar" class="search">
-            <button class="fa-solid fa-magnifying-glass fa-lg" style="color: #477cd7;"></button>
-        </div>
+            <div class="search-container"> 
+                <input type="text" id="searchByName" placeholder="Buscar" class="search">
+                <button class="fa-solid fa-magnifying-glass fa-lg" style="color: #477cd7;"></button>
+            </div>
+
     </form>
+
+    
 
     <table id="inventory-table" class="inventory-table">
         <tr>
@@ -40,7 +47,7 @@
             <th>PRECIO</th>
             <th>ACCIONES</th>
         </tr>
-        <tbody id="inventory-content"></tbody>
+            <tbody id="inventory-content"></tbody>
     </table>
 
     <script src="/scripts/main.js" type="module"></script>
