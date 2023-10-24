@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Mulish:wght@700&family=Open+Sans:wght@300&display=swap');
+@font-face {
+    font-family: 'Open Sans';
+    src: url(/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf) format('truetype');
+}
 
 *{
     margin: 0;
@@ -10,24 +13,24 @@ body{
     background-color: #e3e7e9;
 }
 
-.menu{
+nav{
     background-color: #2e2d2d;
     height: 70px;
     text-align: left;
 }
 
-.menu ul{
+nav ul{
     list-style: none;
     display: flex;
     padding: 25px;
     font-size: .8rem;
  }
 
-.menu ul li{
+nav li{
     margin-left: 30px;
 }
 
-.menu li a {
+nav a {
     padding: 15px;
     color: #fffefe;
     background-color: none;
@@ -35,11 +38,11 @@ body{
     border-radius: 5px;
 }
 
-.menu li a:hover{
+nav a:hover{
     background-color: #484646;
 }
 
-h1{
+header h1{
     padding-top: 20px;
     margin-left: 30px;
     font-size: 1.5rem;
@@ -129,6 +132,17 @@ table button{
 .delete-button{
     background-color: #dd2c2c;
     color: white;
+}
+
+footer{
+    background-color: #2e2d2d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p{
+    font-size: .8rem;
 }
 
 

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="menu">
+    <nav>
         <ul>
             <li><img src="/assets/gestion-de-productos.png" alt="" sizes="16x16"></li>
             <li><a href="#" class="nav">Equipo</a></li>
@@ -20,7 +20,9 @@
         </ul>
     </nav>
 
-    <h1>Productos</h1>
+    <header>
+        <h1>Productos</h1>
+    </header>
 
     <form class="products-form" id="inventory-form">
         <div class="add-container">
@@ -42,9 +44,6 @@
         </div>
     </form>
     
-
-    
-
     <table id="inventory-table" class="inventory-table">
         <tr>
             <th>PRODUCTO</th>
@@ -54,6 +53,10 @@
         </tr>
             <tbody id="inventory-content"></tbody>
     </table>
+
+    <footer>
+        <p>&copy; 2023 Tarea 2 - CRUD de Inventario: Caterina Ilario Paz </p>
+    </footer>
 
     <script src="/scripts/main.js" type="module"></script>
 </body>

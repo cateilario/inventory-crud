@@ -1,4 +1,5 @@
 import { inventory } from "./products.js"
+import { deleteProduct } from "./deleteProduct.js"
 
 export const listProducts = () => {
 
@@ -22,7 +23,7 @@ export const listProducts = () => {
         editButton.classList.add("edit-button")
 
         editButton.addEventListener("click", () =>{
-            //Logic to edit specific product
+            // Logic to edit specific product
         });
 
         cell4.appendChild(editButton);
@@ -32,7 +33,8 @@ export const listProducts = () => {
         deleteButton.classList.add("delete-button")
 
         deleteButton.addEventListener("click", () =>{
-            //Logic to delete specific product
+            // Logic to delete specific product
+            deleteProduct()
         });
 
         cell4.appendChild(deleteButton);
