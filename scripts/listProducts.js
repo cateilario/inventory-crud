@@ -20,8 +20,9 @@ export const listProducts = () => {
         const editButton = document.createElement("button");
         editButton.innerText = "Editar";
         editButton.classList.add("edit-button")
+
         editButton.addEventListener("click", () =>{
-            //Logic to delete specific product
+            //Logic to edit specific product
         });
 
         cell4.appendChild(editButton);

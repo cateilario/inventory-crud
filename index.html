@@ -15,14 +15,15 @@
             <li><img src="/assets/gestion-de-productos.png" alt="" sizes="16x16"></li>
             <li><a href="#" class="nav">Equipo</a></li>
             <li><a href="#" class="nav">Contacto</a></li>
-            <li><a href="/index.html" class="nav">Panel de control</a></li>
-            <li><a href="/inventory.html" class="nav">Inventario</a></li>
+            <li><a href="/controlPanel.html" class="nav">Panel de control</a></li>
+            <li><a href="/index.html" class="nav">Inventario</a></li>
         </ul>
     </nav>
 
-    <h3>Productos</h3>
+    <h1>Productos</h1>
 
     <form class="products-form" id="inventory-form">
+        <div class="add-container">
             <label for="product-name"></label>
             <input class="name" type="text" id="product-name" placeholder="Nombre" required>
             <label for="product-quantity"></label>
@@ -30,13 +31,17 @@
             <label for="product-price"></label>
             <input class="price" type="number" id="product-price" step="0.01" placeholder="Precio" required>
             <button id="add-product" class="add-product" type="submit">Añadir producto</button>
-        
-            <div class="search-container"> 
-                <input type="text" id="searchByName" placeholder="Buscar" class="search">
-                <button class="fa-solid fa-magnifying-glass fa-lg" style="color: #477cd7;"></button>
-            </div>
-
+            <span id="added-product"></span>
+        </div>
     </form>
+    <form class="products-form" id="search-form">
+        <div class="search-container"> 
+            <label for="search-name"></label>
+            <input type="text" id="search-name" placeholder="Buscar" class="search-input">
+            <button class="fa-solid fa-magnifying-glass fa-lg" style="color: #477cd7;" id="search-btn"></button>
+        </div>
+    </form>
+    
 
     
 

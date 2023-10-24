@@ -12,7 +12,7 @@ export const insertProducts = () => {
         const productName = document.getElementById("product-name").value;
         const productQuantity = parseInt(document.getElementById("product-quantity").value);
         const productPrice = parseFloat(document.getElementById("product-price").value).toFixed(2);
-       
+        const addedInput = document.getElementById("added-product")
 
         if (productName && !isNaN(productPrice) && !isNaN(productQuantity)){
             
@@ -27,8 +27,10 @@ export const insertProducts = () => {
             inventory.push(newProduct)
             const cleanTable = document.getElementById("inventory-content")
             cleanTable.innerHTML = "";
+            addedInput.innerText = `${productName} añadido con éxito`
             productForm.reset()
             listProducts()
+            
         }
 
     });
