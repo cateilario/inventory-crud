@@ -1,5 +1,4 @@
 import { inventory } from "./products.js"
-import { deleteProduct } from "./deleteProduct.js"
 
 export const listProducts = () => {
 
@@ -24,6 +23,14 @@ export const listProducts = () => {
 
         editButton.addEventListener("click", () =>{
             // Logic to edit specific product
+            const modalBox = document.getElementById("modal")
+            const closeModal = document.getElementById("btn-close")
+
+            modalBox.style.display = "block";
+
+            closeModal.onclick = () =>{
+                modalBox.style.display = "none";
+            }
         });
 
         cell4.appendChild(editButton);
@@ -31,10 +38,19 @@ export const listProducts = () => {
         const deleteButton = document.createElement("button");
         deleteButton.innerText = "Borrar";
         deleteButton.classList.add("delete-button")
-
+        
         deleteButton.addEventListener("click", () =>{
             // Logic to delete specific product
-            deleteProduct()
+            if(confirm(`¿Seguro que seas borrar ${item.name}?`)){
+                const index = inventory.findIndex(product => product.id === item.id)
+        
+                    if (index !== -1) { // If index is not -1, we have a match, so we delete the product
+                    inventory.splice(index, 1)
+                    } 
+                }    
+            const cleanTable = document.getElementById("inventory-content")
+            cleanTable.innerHTML= "";
+            listProducts()
         });
 
         cell4.appendChild(deleteButton);
