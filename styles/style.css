@@ -57,14 +57,14 @@ form{
 }
 
 input{
-    padding: 7px;
+    padding: 10px;
     border-radius: 3px;
     margin-right: 5px;
     border: .5px solid #afadad;
 }
 
 input:focus{
-    background-color: #e8f5fa;
+    background-color: #e8f5faf3;
 }
 
 form button{
@@ -75,10 +75,9 @@ form button{
 .add-product{
     background-color: #458ae4;
     color: white;
-    font-weight: 600;
     border:none;
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .add-product:hover{
@@ -116,7 +115,7 @@ td{
 
 table button{
     margin-right: 10px;
-    padding: 5px;
+    padding: 10px;
     width: 90px;
     height: auto;
     border: none;
@@ -147,24 +146,29 @@ footer p{
 
 .modal-window{
     display: none;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: #00000066; /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #0000007a; 
 }
 
 .modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
-    border: 1px solid #2e2d2d;
+    border: none;
     width: 400px;
+    height: 350px;
     border-radius: 5px;
-    text-align: center;
-    padding: 20px;
+    margin: 100px auto;
 }
+
 
 
 

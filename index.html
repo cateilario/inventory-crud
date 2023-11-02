@@ -22,8 +22,8 @@
     <header>
         <h1>Productos</h1>
     </header>
-
-    <form class="products-form" id="inventory-form">
+    
+    <form class="products-form" id="inventory-form" autocomplete="off">
         <div class="add-container">
             <label for="product-name"></label>
             <input class="name" type="text" id="product-name" placeholder="Nombre" required>
@@ -37,9 +37,10 @@
     </form>
     <form class="products-form" id="search-form">
         <div class="search-container"> 
-            <label for="search-name"></label>
-            <input type="text" id="search-name" placeholder="Buscar" class="search-input">
-            <button class="fa-solid fa-magnifying-glass fa-lg" style="color: #477cd7;" id="search-btn"></button>
+            <label for="search"></label>
+            <input type="text" id="search" placeholder="Buscar" class="search-input">
+            <button type="submit" class="fa-solid fa-magnifying-glass fa-lg" style="color: #477cd7;" id="search-btn"></button>
+            <span id="search-output"></span>
         </div>
     </form>
     
@@ -60,7 +61,7 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn-save">Save changes</button>
+              <button type="submit" class="btn-save" id="btn-save">Guardar</button>
             </div>
         </div>
       </div>
