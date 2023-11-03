@@ -32,23 +32,36 @@
             <label for="product-price"></label>
             <input class="price" type="number" id="product-price" step="0.01" placeholder="Precio" required>
             <button id="add-product" class="add-product" type="submit">Añadir producto</button>
-            <span id="added-product"></span>
+            <span class="added-product" id="added-product"></span>
         </div>
     </form>
     <form class="products-form" id="search-form">
         <div class="search-container"> 
             <label for="search"></label>
-            <input type="text" id="search" placeholder="Buscar" class="search-input">
-            <button type="submit" class="fa-solid fa-magnifying-glass fa-lg" style="color: #477cd7;" id="search-btn"></button>
-            <span id="search-output"></span>
+            <input type="text" id="search" placeholder="Buscar" class="search-input" autocomplete="off">
+            <button type="button" class="fa-solid fa-magnifying-glass fa-lg" style="color: #477cd7;" id="search-btn"></button>
         </div>
     </form>
+
+    <div class="modal-window" id="modal-search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">PRODUCTO ENCONTRADO</span>
+            </div>
+            <div class="modal-body" id="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button class="btn-close" id="close-modal">Cerrar</button>
+              <button class="btn-save" id="btn-edit" data-toggle="modal" data-target="#modal">Editar Producto</button>
+            </div>
+        </div>
+    </div>
     
     <div class="modal-window" id="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title">Editar Producto</span>
-                <button class="btn-close" id="btn-close">X</button>
+                <h2 class="modal-title">Editar Producto</h2>
+                
             </div>
             <div class="modal-body">
               <form action="" id="edit-form">
@@ -61,7 +74,8 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button type="submit" class="btn-save" id="btn-save">Guardar</button>
+                <button class="btn-close" id="btn-close">Cerrar</button>
+                <button type="submit" class="btn-save" id="btn-save">Guardar</button>
             </div>
         </div>
       </div>

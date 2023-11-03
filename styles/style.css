@@ -169,6 +169,17 @@ footer p{
     margin: 100px auto;
 }
 
+.hidden{
+    display: none;
+}
+
+.added-product{
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 600;
+}
+
+
 
 
 

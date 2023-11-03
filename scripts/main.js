@@ -5,9 +5,7 @@
 
 import { insertProducts } from "./insertProducts.js"
 import { listProducts } from "./listProducts.js"
-
-
-document.addEventListener("DOMContentLoaded", listProducts);
+import { searchProduct } from "./searchProduct.js"
 
 // Add a new product to the inventory
 document.addEventListener("DOMContentLoaded", listProducts)
@@ -22,10 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchBtn = document.getElementById("search-btn")
 
     searchBtn.addEventListener("click", () => {
-        const searchInput = document.querySelector("#search-name").value
-        
-        let findProduct = inventory.find(product => product.name === searchInput)
-        console.log(findProduct)
-    
+        searchProduct()
     })
 })

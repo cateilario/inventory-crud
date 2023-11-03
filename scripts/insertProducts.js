@@ -7,7 +7,6 @@ export const insertProducts = () => {
     productForm.addEventListener("submit", (event) => {
         // Preventing to behave like a form
         event.preventDefault()
-        
 
         const productName = document.getElementById("product-name").value;
         const productQuantity = parseInt(document.getElementById("product-quantity").value);
@@ -27,7 +26,14 @@ export const insertProducts = () => {
             inventory.push(newProduct)
             const cleanTable = document.getElementById("inventory-content")
             cleanTable.innerHTML = "";
-            addedInput.innerText = `${productName} añadido con éxito`
+
+            addedInput.innerText = `Producto "${productName}" añadido con éxito`
+            addedInput.classList.add = "hidden"
+            addedInput.style.display = "block"
+            setTimeout(() => {
+                addedInput.style.display= "none"
+            }, 2000)
+
             productForm.reset()
             listProducts()
             
