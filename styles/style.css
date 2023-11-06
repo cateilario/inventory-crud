@@ -77,11 +77,17 @@ form button{
     color: white;
     border:none;
     border-radius: 5px;
-    padding: 15px;
+    padding: 12px 15px;
 }
 
 .add-product:hover{
     background-color: #4674af;
+}
+
+.added-product{
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 600;
 }
 
 .search-input{
@@ -144,40 +150,7 @@ footer p{
     font-size: .8rem;
 }
 
-.modal-window{
-    display: none;
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: #0000007a; 
-}
 
-.modal-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border: none;
-    width: 400px;
-    height: 350px;
-    border-radius: 5px;
-    margin: 100px auto;
-}
-
-.hidden{
-    display: none;
-}
-
-.added-product{
-    margin: 20px auto;
-    text-align: center;
-    font-weight: 600;
-}
 
 
 

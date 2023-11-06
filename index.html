@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/styleModal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Inventario</title>
 </head>
@@ -59,23 +60,25 @@
     
     <div class="modal-window" id="modal">
         <div class="modal-content">
+
             <div class="modal-header">
-                <h2 class="modal-title">Editar Producto</h2>
-                
+                <h3 class="modal-title">Editar Producto</h3>
             </div>
+            
             <div class="modal-body">
-              <form action="" id="edit-form">
-                <label for="name-edit">Nombre</label>
-                <input type="text" id="name-edit"><br>
-                <label for="quantity-edit">Cantidad</label>
-                <input type="text" id="quantity-edit"><br>
-                <label for="price-edit">Precio</label>
-                <input type="text" id="price-edit">
+              <form action="" class="edit-form" id="edit-form">
+                <label for="name-edit"></label>
+                <input type="text" id="name-edit" placeholder="Nuevo Nombre"><br>
+                <label for="quantity-edit"></label>
+                <input type="text" id="quantity-edit" placeholder="Nueva Cantidad"><br>
+                <label for="price-edit"></label>
+                <input type="text" id="price-edit" placeholder="Nuevo Precio">
               </form>
             </div>
+            
             <div class="modal-footer">
-                <button class="btn-close" id="btn-close">Cerrar</button>
-                <button type="submit" class="btn-save" id="btn-save">Guardar</button>
+                <button id="btn-close" class="btn-close" >Cerrar</button>
+                <button type="button" id="btn-save" class="btn-save">Guardar</button>
             </div>
         </div>
       </div>
