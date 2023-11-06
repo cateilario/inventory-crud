@@ -32,7 +32,7 @@ export const insertProducts = () => {
             addedInput.style.display = "block"
             setTimeout(() => {
                 addedInput.style.display= "none"
-            }, 2000)
+            }, 4000)
 
             productForm.reset()
             listProducts()
