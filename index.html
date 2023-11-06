@@ -49,7 +49,8 @@
             <div class="modal-header">
                 <span class="modal-title">PRODUCTO ENCONTRADO</span>
             </div>
-            <div class="modal-body" id="modal-body">
+            <div class="modal-body">
+                <p id="modal-body"></p>
             </div>
             <div class="modal-footer">
               <button class="btn-close" id="close-modal">Cerrar</button>
@@ -60,22 +61,19 @@
     
     <div class="modal-window" id="modal">
         <div class="modal-content">
-
             <div class="modal-header">
-                <h3 class="modal-title">Editar Producto</h3>
+                <h3 class="modal-title">EDITAR PRODUCTO</h3>
             </div>
-            
             <div class="modal-body">
               <form action="" class="edit-form" id="edit-form">
-                <label for="name-edit"></label>
-                <input type="text" id="name-edit" placeholder="Nuevo Nombre"><br>
-                <label for="quantity-edit"></label>
-                <input type="text" id="quantity-edit" placeholder="Nueva Cantidad"><br>
-                <label for="price-edit"></label>
-                <input type="text" id="price-edit" placeholder="Nuevo Precio">
+                <label for="name-edit">Nuevo nombre:</label>
+                <input type="text" id="name-edit"><br>
+                <label for="quantity-edit">Nueva Cantidad:</label>
+                <input type="number" id="quantity-edit"><br>
+                <label for="price-edit">Nuevo precio:</label>
+                <input type="number" id="price-edit"><br>
               </form>
             </div>
-            
             <div class="modal-footer">
                 <button id="btn-close" class="btn-close" >Cerrar</button>
                 <button type="button" id="btn-save" class="btn-save">Guardar</button>

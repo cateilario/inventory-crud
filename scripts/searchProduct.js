@@ -6,11 +6,7 @@ export const searchProduct = () => {
   const modalBody = document.getElementById("modal-body")
   const modalClose = document.getElementById("close-modal")
 
-  const findProdubtByName = (name) => {
-    return inventory.find(product => product.name === searchInput)
-  }
-
-  const productFound = findProdubtByName(searchInput)
+  const productFound = inventory.find(item => item.name.toLowerCase() === searchInput.toLowerCase())
 
   if (productFound){
     foundedModal.style.display = "block"

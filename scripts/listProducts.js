@@ -1,5 +1,6 @@
 import { inventory } from "./products.js"
 import { deleteProduct } from "./deleteProduct.js"
+import { editProduct } from "./editProduct.js"
 
 export const listProducts = () => {
 
@@ -22,35 +23,8 @@ export const listProducts = () => {
         editButton.innerText = "Editar";
         editButton.classList.add("edit-button")
 
-        editButton.addEventListener("click", () =>{
-            
-            const modalBox = document.getElementById("modal")
-            const closeModal = document.getElementById("btn-close")
-            const saveBtn = document.getElementById("btn-save")
-           
-            modalBox.style.display = "block";
-
-            closeModal.addEventListener("click", () =>{
-                modalBox.style.display = "none";
-            })
-    
-            saveBtn.addEventListener("click", () =>{
-
-                const newName = document.getElementById("name-edit").value
-                const newQuantity = parseInt(document.getElementById("quantity-edit").value)
-                const newPrice = parseFloat(document.getElementById("price-edit").value).toFixed(2)
-    
-                item.name = newName
-                item.amount = newQuantity
-                item.price = newPrice
-
-                cell1.innerHTML = newName
-                cell2.innerHTML = newQuantity
-                cell3.innerHTML = `${newPrice}€`
-
-                modalBox.style.display = 'none'
-            })
-
+        editButton.addEventListener("click", () => {
+            editProduct(item.id)
         });
 
         cell4.appendChild(editButton);

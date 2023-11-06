@@ -1,32 +1,35 @@
-import { inventory } from "./products";
-import { listProducts } from "./listProducts";
+import { inventory } from "./products.js";
+import { listProducts } from "./listProducts.js";
 
 export const editProduct = (productId) => {
-    const index = inventory.find(product => product.id === item.id)
+    const product = inventory.find(item => item.id === productId)
 
+    if(product){
     const modalBox = document.getElementById("modal")
     const closeModal = document.getElementById("btn-close")
     const saveBtn = document.getElementById("btn-save")
-           
+    const newNameInput = document.getElementById("name-edit")
+    const newQuantityInput = document.getElementById("quantity-edit")
+    const newPriceInput = document.getElementById("price-edit")
+    
     modalBox.style.display = "block";
 
-        closeModal.addEventListener("click", () => {
-            modalBox.style.display = "none";
-        })
+    closeModal.addEventListener("click", () => {
+        modalBox.style.display = "none";
+    })
     
-        saveBtn.addEventListener("click", () => {
-            const newName = document.getElementById("name-edit").value
-            const newQuantity = parseInt(document.getElementById("quantity-edit").value)
-            const newPrice = parseFloat(document.getElementById("price-edit").value).toFixed(2)
+    newNameInput.value = product.name;
     
-                item.name = newName
-                item.amount = newQuantity
-                item.price = newPrice
+    saveBtn.addEventListener("click", () => {
+        product.name = newNameInput.value
+        product.amount = parseInt(newQuantityInput.value)
+        product.price = parseFloat(newPriceInput.value).toFixed(2)
 
-                cell1.innerHTML = newName
-                cell2.innerHTML = newQuantity
-                cell3.innerHTML = `${newPrice}€`
+        const cleanTable = document.getElementById("inventory-content")
+        cleanTable.innerHTML = "";
+        listProducts()
+        modalBox.style.display = 'none'
+    })
 
-                modalBox.style.display = 'none'
-        })
+    }
 }
