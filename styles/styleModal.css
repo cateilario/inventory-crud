@@ -17,7 +17,7 @@
     align-items: center;
     background-color: white;
     border: none;
-    width: 400px;
+    width: 60%;
     height: 350px;
     border-radius: 5px;
     margin: 200px auto;
@@ -26,11 +26,14 @@
 .modal-header{
     color: #1a1a1a;
     font-size: 1.2rem;
+    width: 100%;
+    border-bottom: 1px solid #a5a4a4;
+    text-align: center;
+    padding: 10px 0 10px 0;
 }
 
 .edit-form{
     background-color: white;
-    border: 1px solid black;
     border-radius: 3px;
     padding: 10px 50px 10px 50px;
 }
@@ -40,12 +43,15 @@
 }
 
 .modal-footer{
-    margin-right: -150px;
-    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    border-top: 1px solid #a5a4a4;
+    padding: 10px 0 10px 0;
 }
 
 .modal-footer button{
-    padding: 8px 15px;
+    padding: 10px 15px;
     margin: 5px;
     cursor: pointer;
     border-radius: 3px;
