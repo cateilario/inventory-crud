@@ -29,9 +29,6 @@ export const editProduct = (productId) => {
         cleanTable.innerHTML = "";
         listProducts()
         modalBox.style.display = 'none'
-
-        newQuantityInput.value = "";
-        newPriceInput.value = "";
     })
 
     }
