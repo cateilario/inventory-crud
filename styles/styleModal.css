@@ -19,9 +19,9 @@
     background-color: white;
     border: none;
     max-width: 400px;
-    min-height: 60vh;
+    min-height: 50vh;
     border-radius: 5px;
-    margin: 100px auto;
+    margin: 150px auto;
 }
 
 .modal-header{
@@ -77,3 +77,15 @@
     display: none;
 }
 
+.modal2-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: none;
+    max-width: 400px;
+    min-height: 20vh;
+    border-radius: 5px;
+    margin: 150px auto;
+}
