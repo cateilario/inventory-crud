@@ -17,20 +17,20 @@ export const searchProduct = () => {
     return
   }
 
-    foundedModal.style.display = "block"
-    console.log(productFounded)
+  foundedModal.style.display = "block"
+  console.log(productFounded)
 
-    openEditModal.addEventListener("click", () =>{
-      foundedModal.style.display = "none";
-      editProduct(productFounded.id)
-      searchInput.value = ""
-    })
+  openEditModal.addEventListener("click", () =>{
+    foundedModal.style.display = "none";
+    editProduct(productFounded.id)
+    searchInput.value = ""
+  })
 
-    deleteBtn.addEventListener("click", () => {
-      deleteProduct(productFounded)
-      foundedModal.style.display = "none"
-      searchInput.value = "";
-    })
+  deleteBtn.addEventListener("click", () => {
+    deleteProduct(productFounded)
+    foundedModal.style.display = "none"
+    searchInput.value = "";
+  })
     
 
 }
