@@ -21,6 +21,13 @@
     min-height: 50vh;
     border-radius: 5px;
     margin: 150px auto;
+    animation: show 1s .5s backwards;
+}
+
+@keyframes show {
+    0%{
+        transform: translateY(-100vh);
+    }
 }
 
 .modal-header{

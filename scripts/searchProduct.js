@@ -18,13 +18,13 @@ export const searchProduct = () => {
     return
   }
 
-  foundedModal.style.display = "block"
+  foundedModal.style.display = "block";
   console.log(productFounded)
   modalContent.innerHTML = `<p><strong>Producto:</strong> <br> ${productFounded.name}</p> 
                             <p><strong>Stock:</strong>  <br> ${productFounded.amount} uds</p>  
                             <p><strong>Precio:</strong> <br>${productFounded.price}€</p>`
   
-    openEditModal.addEventListener("click", () =>{
+  openEditModal.addEventListener("click", () =>{
     foundedModal.style.display = "none";
     editProduct(productFounded.id)
     searchInput.value = ""

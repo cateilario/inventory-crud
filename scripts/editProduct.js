@@ -30,6 +30,6 @@ export const editProduct = (productId) => {
         listProducts()
         modalBox.style.display = 'none'
     })
-
+    
     }
 }
