@@ -10,7 +10,8 @@
 }
 
 body{
-    background-color: #e3e7e9;
+    background: #e3e7e9;
+    background: radial-gradient(circle, #b1afb0 46%, #e3e7e9 96%);
 }
 
 nav{
@@ -49,7 +50,7 @@ header h1{
     text-align: center;
 }
 
-form{
+section form{
     margin: 20px;
     background-color: white;
     border-radius: 5px;
