@@ -18,8 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     const searchBtn = document.getElementById("search-btn")
+    const searchInput = document.getElementById("search")
 
-    searchBtn.addEventListener("click", () => {
-        searchProduct()
+    searchBtn.addEventListener("click", searchProduct)
+    searchInput.addEventListener("keydown", (event) => {
+        if(event.key === "Enter") {
+            event.preventDefault();
+            searchProduct();
+        }
     })
 })
