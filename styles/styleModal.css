@@ -10,7 +10,6 @@
     background-color: #0000008d;
 }
 
-
 .modal-content{
     display: flex;
     flex-direction: column;
@@ -27,6 +26,7 @@
 .modal-header{
     color: #1a1a1a;
     font-size: 1.2rem;
+    font-weight: 600;
     width: 100%;
     border-bottom: 1px solid #a5a4a4;
     text-align: center;
@@ -88,4 +88,28 @@
     min-height: 20vh;
     border-radius: 5px;
     margin: 150px auto;
+    position: relative;
+}
+
+.modal-header .fa-solid {
+    background-color: #a70b0b;
+    color: white;
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-weight: 500;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.modal-header .fa-solid:hover{
+    background-color: #aa4343;
+}
+
+.modal2-content .modal-body{
+    margin: 10px 
 }

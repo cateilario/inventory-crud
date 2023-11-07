@@ -24,6 +24,7 @@
         <h1>Productos</h1>
     </header>
     
+    <section>
     <form class="products-form" id="inventory-form" autocomplete="off">
         <div class="add-container">
             <label for="product-name"></label>
@@ -36,6 +37,9 @@
             <span class="added-product" id="added-product"></span>
         </div>
     </form>
+    </section>
+
+    <section>
     <form class="products-form" id="search-form">
         <div class="search-container"> 
             <label for="search"></label>
@@ -43,15 +47,16 @@
             <button type="button" class="fa-solid fa-magnifying-glass fa-lg" style="color: #477cd7;" id="search-btn"></button>
         </div>
     </form>
+    </section>
 
     <div class="modal-window" id="modal-search">
         <div class="modal2-content">
             <div class="modal-header">
-                <span class="modal-title">PRODUCTO ENCONTRADO</span>
-                <button id="close-modal" class="fa-solid fa-x" style="color: #ffffff;"></class=>></button>
+                <p class="modal-title">PRODUCTO ENCONTRADO</p>
+                <button id="close-modal" class="fa-solid fa-x" style="color: #ffffff;"></button>
             </div>
             <div class="modal-body">
-                <p id="modal-body"></p>
+                <p id="founded-product"></p>
             </div> 
             <div class="modal-footer">
               <button class="btn-close" id="btn-delete">Borrar</button>
@@ -63,7 +68,7 @@
     <div class="modal-window" id="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title">EDITAR PRODUCTO</h3>
+                <p class="modal-title">EDITAR PRODUCTO</p>
             </div>
             <div class="modal-body">
               <form action="" class="edit-form" id="edit-form">
@@ -82,6 +87,7 @@
         </div>
       </div>
     
+    <section>
     <table id="inventory-table" class="inventory-table">
         <tr>
             <th>PRODUCTO</th>
@@ -91,6 +97,7 @@
         </tr>
             <tbody id="inventory-content"></tbody>
     </table>
+    </section>
 
     <footer>
         <p>&copy; 2023 Tarea 2 - CRUD de Inventario: Caterina Ilario Paz </p>
