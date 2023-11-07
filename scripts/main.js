@@ -1,6 +1,6 @@
 /**
  * @author Caterina Ilario
- * @GitHub 
+ * @GitHub https://github.com/cateilario/inventory-crud-system.git
  */
 
 import { insertProducts } from "./insertProducts.js"
