@@ -46,6 +46,7 @@ header h1{
     padding-top: 20px;
     margin-left: 30px;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 form{
@@ -54,6 +55,7 @@ form{
     border-radius: 5px;
     padding: 25px;
     font-size: .9rem;
+    box-shadow: 0 0 10px #808080;
 }
 
 input{
@@ -114,6 +116,7 @@ form button{
     width: 97%;
     text-align: center;
     font-size: .9rem;
+    box-shadow: 0 0 10px #808080;
 }
 
 th{
