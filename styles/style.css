@@ -88,6 +88,13 @@ form button{
     margin: 20px auto;
     text-align: center;
     font-weight: 600;
+    animation: show 1s 1;
+}
+
+@keyframes show {
+    0%{
+        transform: translate(-3vh)
+    }
 }
 
 .search-input{

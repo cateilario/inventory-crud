@@ -96,6 +96,7 @@
     border-radius: 5px;
     margin: 150px auto;
     position: relative;
+    animation: show 1s .5s backwards;
 }
 
 .modal-header .fa-solid {
