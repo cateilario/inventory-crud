@@ -1,25 +1,37 @@
 import { inventory } from "./products.js";
+import { editProduct } from "./editProduct.js";
+import { deleteProduct } from "./deleteProduct.js";
 
 export const searchProduct = () => { 
-  const searchInput = document.getElementById("search").value
+  const searchInput = document.getElementById("search")
   const foundedModal = document.getElementById("modal-search")
   const modalBody = document.getElementById("modal-body")
-  const closeBtn = document.getElementById("close-modal")
+  const deleteBtn = document.getElementById("btn-delete")
+  const openEditModal = document.getElementById("btn-edit")
 
-  const productFound = inventory.find(item => item.name.toLowerCase() === searchInput.toLowerCase())
+  const productFounded = inventory.find(item => item.name.toLowerCase() === searchInput.value.toLowerCase())
 
-  if (productFound){
-    foundedModal.style.display = "block"
-
-  } else {
-    alert(`Producto no encontrado en el inventario.`)
+  if (!productFounded){
+    alert(`No hay coincidencias en el inventario.`)
+    searchInput.value = "";
+    return
   }
 
-  closeBtn.addEventListener("click", () => {
-    foundedModal.style.display = "none"
-    searchInput = "";
-  })
+    foundedModal.style.display = "block"
+    console.log(productFounded)
 
+    openEditModal.addEventListener("click", () =>{
+      foundedModal.style.display = "none";
+      editProduct(productFounded.id)
+      searchInput.value = ""
+    })
+
+    deleteBtn.addEventListener("click", () => {
+      deleteProduct(productFounded)
+      foundedModal.style.display = "none"
+      searchInput.value = "";
+    })
+    
 
 }
   
